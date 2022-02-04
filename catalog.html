@@ -10,82 +10,76 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="header-top__wrapper">
-        <a href="index.html" class="header-top__link">
-          <img src="" alt="Логотип магазина Device">
+        <a href="#" class="logo">
+          <img src="" class="logo__img" alt="Логотип магазина Device">
         </a>
-      </div>
-      <!-- .header-top__wrapper -->
 
-      <div class="header-middle">
-        <form action="https://echo.htmlacademy.ru/" class="header-form">
-          <input type="text" class="header-form__input header-serch" placeholder="Текст поиска">
-          <button>Найти</button>
-        </form>
-        <ul class="header-middle__list list-user">
-          <li class="header-middle__item">
-            <a href="#" class="header-middle__link user-name">Коля Петухов</a>
-          </li>
-          <li class="header-middle__item">
-            <a href="#" class="header-middle__link user-exit">Выйти</a>
-          </li>
-          <li class="header-middle__item">
-            <a href="#" class="header-middle__link user-compare">Сравнить</a>
-          </li>
-          <li class="header-middle__item">
-            <a href="#" class="header-middle__link user-cart">Корзина</a>
-          </li>
-        </ul>
-      </div>
-      <!-- .header-middle -->
-
-      <div class="header-bottom">
-        <button>Каталог товаров</button>
-        <div class="wrappper-sublists">
-          <ul class="header-bottom__sublist menu-products">
-            <li class="header-sublist__item">
-              <a href="#" class="menu-products__link">Виртуальная реалность</a>
+        <div class="header-interface">
+          <form action="https://echo.htmlacademy.ru" class="header-form">
+            <input type="text" class="header-form__input" placeholder="Текст поиска">
+            <button class="header-form__button">Найти</button>
+          </form>
+          <ul class="header-interface__list">
+            <li class="header-interface__item">
+              <a href="#" class="header-interface__link header-interface__link--user">Коля Петухов</a>
             </li>
-            <li class="header-sublist__item">
-              <a href="catalog.html" class="menu-products__link">Моноподы для cелфи</a>
+            <li class="header-interface__item">
+              <a href="#" class="header-interface__link header-interface__link--entrance">Войти</a>
             </li>
-            <li class="header-sublist__item">
-              <a href="#" class="menu-products__link">Экшн-камеры</a>
+            <li class="header-interface__item">
+              <a href="#" class="header-interface__link header-interface__link--compare">Сравнить</a>
             </li>
-          </ul>
-          <ul class="header-bottom__sublist">
-            <li class="header-sublist__item">
-              <a href="#" class="menu-products__link">Фитнес-браслеты</a>
-            </li>
-            <li class="header-sublist__item">
-              <a href="#" class="menu-products__link">Умные часы</a>
-            </li>
-          </ul>
-          <ul class="header-bottom__sublist">
-            <li class="header-sublist__item">
-              <a href="#" class="menu-products__link">Квадрокоптеры</a>
+            <li class="header-interface__item">
+              <a href="#" class="header-interface__link header-interface__link--cart">Корзина</a>
             </li>
           </ul>
         </div>
-        <!-- /.wrappper-lists -->
-        <nav class="header-bottom__navigation">
-          <ul class="header-bottom__list">
-            <li class="header-bottom__item">
-              <a href="#" class="header-bottom__link">Доставка</a>
+
+      <div class="header-services">
+        <button class="header-services__button" type="button">Каталог товаров</button>
+        <div class="header-services__items">
+          <ul class="header-services__menu">
+            <li class="header-services__item">
+              <a href="#" class="header-services__link">Виртуальная реалность</a>
             </li>
-            <li class="header-bottom__item">
-              <a href="#" class="header-bottom__link">Гарантия</a>
+            <li class="header-services__item">
+              <a href="catalog.html" class="header-services__link">Моноподы для cелфи</a>
             </li>
-            <li class="header-bottom__item">
-              <a href="#" class="header-bottom__link">Контакты</a>
+            <li class="header-services__item">
+              <a href="#" class="header-services__link">Экшн-камеры</a>
+            </li>
+            <li class="header-services__item">
+              <a href="#" class="header-services__link">Фитнес-браслеты</a>
+            </li>
+            <li class="header-services__item">
+              <a href="#" class="header-services__link">Умные часы</a>
+            </li>
+            <li class="header-services__item">
+              <a href="#" class="header-services__link">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </div>
+
+        <nav class="header-navigation">
+          <ul class="header-navigation__list">
+            <li class="header-navigation__item">
+              <a href="#" class="header-navigation__link">Доставка</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="header-navigation__link">Гарантия</a>
+            </li>
+            <li class="header-navigation__item">
+              <a href="#" class="header-navigation__link">Контакты</a>
             </li>
           </ul>
         </nav>
       </div>
-      <!-- /.header-bottom -->
+
     </div>
   </header>
-  <!-- .header -->
+
+
+
 
   <main class="main">
     <h1 class="catalog-main-title">Моноподы для селфи</h1>
@@ -100,7 +94,6 @@
         <a href="#" class="breadcrumps-list__link">Моноподы для селфи</a>
       </li>
     </ul>
-    <!-- /.breadcrumps-list -->
 
     <div class="wrapper-catalog">
       <section class="filters">
@@ -200,70 +193,64 @@
                 <option value="">Популярные</option>
               </select>
             </li>
-            <!-- /.products-sorting__item -->
             <li class="products-sorting__item">
-              <a href="" class="products-sorting__link">
-                <span class="sorting-link-arrow-up"></span>
+              <a href="" class="products-sorting__link products-sorting__link-decorate--up">
+                <span class="visually-hidden">Больше</span>
               </a>
             </li>
-            <!-- /.products-sorting__item -->
             <li class="products-sorting__item">
-              <a href="" class="products-sorting__link">
-                <span class="sorting-link-arrow-down"></span>
+              <a href="" class="products-sorting__link products-sorting__link-decorate--down">
+                <span class="visually-hidden">Меньше</span>
               </a>
             </li>
-            <!-- /.products-sorting__item -->
           </ul>
-          <!-- /.products-sorting__list -->
         </div>
-        <!-- /.products-sorting__wrapper -->
 
         <ul class="products-list">
           <li class="products-list__item">
-            <div class="products-item__wrapper">
-              <img src="" alt="">
+            <div class="products-list__wrapper-img">
+              <img class="products-list__item-img" src="" alt="">
             </div>
-            <div class="products-item__wrapper">
-              <h3 class="products-list__subtitle">Любительская селфи-палка</h3>
-              <p class="products-list__sale">500 р</p>
-            </div>
-          </li>
-
-          <li class="products-list__item">
-            <div class="products-list__wrapper">
-              <img src="" alt="">
-            </div>
-            <div class="products-item__wrapper">
-              <h3 class="products-list__subtitle">Профессиональная селфи-палка </h3>
-              <p class="products-list__sale">1500 р</p>
+            <div class="products-item__wrapper-text">
+              <h3 class="products-item__subtitle">Любительская селфи-палка</h3>
+              <p class="products-item__sale">500 р</p>
             </div>
           </li>
 
           <li class="products-list__item">
-            <div class="products-list__wrapper">
-              <img src="" alt="">
+            <div class="products-list__wrapper-img">
+              <img class="products-list__item-img" src="" alt="">
             </div>
-            <div class="products-item__wrapper">
-              <h3 class="products-list__subtitle">Непотопляемая селфи-палка</h3>
-              <p class="products-list__sale">2500 р</p>
+            <div class="products-item__wrapper-text">
+              <h3 class="products-item__subtitle">Профессиональная селфи-палка </h3>
+              <p class="products-item__sale">1500 р</p>
             </div>
           </li>
 
           <li class="products-list__item">
-            <div class="products-list__wrapper">
-              <img src="" alt="">
+            <div class="products-list__wrapper-img">
+              <img class="products-list__item-img" src="" alt="">
             </div>
-            <div class="products-item__wrapper">
-              <h3 class="products-list__subtitle">Селфи-палка «Следуй за мной»</h3>
-              <p class="products-list__sale">1 500 р</p>
+            <div class="products-item__wrapper-text">
+              <h3 class="products-item__subtitle">Непотопляемая селфи-палка</h3>
+              <p class="products-item__sale">2500 р</p>
+            </div>
+          </li>
+
+          <li class="products-list__item">
+            <div class="products-list__wrapper-img">
+              <img class="products-list__item-img" src="" alt="">
+            </div>
+            <div class="products-item__wrapper-text">
+              <h3 class="products-item__subtitle">Селфи-палка «Следуй за мной»</h3>
+              <p class="products-item__sale">1 500 р</p>
             </div>
           </li>
         </ul>
-        <!-- /.products-list -->
 
         <a href="#" class="products-more">Загрузить еще</a>
         <div class="products-breadcrumbs">
-          <a href="" class="products-breadcrumbs__link breadcrumbs-back">Назад</a>
+          <a href="" class="products-breadcrumbs__link products-breadcrumbs__link--back">Назад</a>
           <ul class="products-breadcrumbs__list">
             <li class="products-breadcrumbs__item">
               <a href="#" class="products-breadcrumbs__link">1</a>
@@ -286,65 +273,60 @@
             </li>
             <!-- /.products-breadcrumbs__item -->
           </ul>
-          <a href="" class="products-breadcrumbs__link breadcrumbs-next">Вперед</a>
+          <a href="" class="products-breadcrumbs__link products-breadcrumbs__link--next">Вперед</a>
         </div>
       </section>
-      <!-- /.products -->
     </div>
-    <!-- /.wrapper-catalog -->
-
   </main>
-  <!-- /.main -->
 
   <footer class="footer">
     <div class="container">
-      <div class="footer-top">
         <a href="#" class="footer-logo">
-          <img src="" alt="">
+          <img class="footer-logo__img" src="" alt="Магазин девайсов">
         </a>
-      </div>
-      <div class="footer-middle">
-        <p class="footer-middle__text">
+      <div class="footer-info">
+        <p class="footer-info__text">
           Санкт-Петербург, набережная
           реки Карповки, 5, литера П.
         </p>
-        <ul class="footer-middle__list">
-          <li class="footer-middle__item">
-            <a href="#" class="footer-middle__link">Доставка</a>
+        <ul class="footer-info__nav">
+          <li class="footer-info__item">
+            <a href="#" class="footer-info__link">Доставка</a>
           </li>
-          <li class="footer-middle__item">
-            <a href="#" class="footer-middle__link">Гарантия</a>
+          <li class="footer-info__item">
+            <a href="#" class="footer-info__link">Гарантия</a>
           </li>
-          <li class="footer-middle__item">
-            <a href="#" class="footer-middle__link">Контакты</a>
+          <li class="footer-info__item">
+            <a href="#" class="footer-info__link">Контакты</a>
           </li>
         </ul>
-        <a href="tel:+7(812)8121212" class="footer-middle__phone">Тел.: +7 (812) 812-12-12</a>
+        <a href="tel:+7(812)8121212" class="footer-info__phone">Тел.: +7 (812) 812-12-12</a>
       </div>
-      <div class="footer-bottom">
-        <ul class="footer-social__list">
-          <li class="footer-social__item">
-            <a href="#" class="footer-social__link">
-              <img src="" alt="">
+
+      <div class="footer-social">
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a href="#" class="social-list__link social-list__link--facebook">
+              <img class="social-list__img" src="" alt="">
             </a>
           </li>
-          <li class="footer-social__item">
-            <a href="#" class="footer-social__link">
-              <img src="" alt="">
+          <li class="social-list__item">
+            <a href="#" class="social-list__link social-list__link--instagram">
+              <img class="social-list__img" src="" alt="">
             </a>
           </li>
-          <li class="footer-social__item">
-            <a href="#" class="footer-social__link">
-              <img src="" alt="">
+          <li class="social-list__item">
+            <a href="#" class="social-list__link social-list__link--twitter">
+              <img class="social-list__img" src="" alt="">
             </a>
           </li>
         </ul>
-        <a href="#" class="footer-bottom__link">
-          <img src="" alt="">
+
+        <a href="https://htmlacademy.ru/" class="footer-social__academy">
+          <img class="footer-social__academy-img" src="" alt="HTML academy курсы для всех">
         </a>
       </div>
     </div>
   </footer>
-  <!-- .footer -->
 </body>
 </html>
