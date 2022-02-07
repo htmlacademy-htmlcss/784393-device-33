@@ -75,7 +75,6 @@
           </ul>
         </nav>
       </div>
-
     </div>
   </header>
 
@@ -231,8 +230,10 @@
 
         <button class="products-more" type="button">Загрузить еще</button>
         <div class="paginations">
-          <a href="#" class="paginations__link paginations__link--back">Назад</a>
           <ul class="pagination-list">
+            <li class="pagination-list__item">
+              <a href="#" class="pagination-list__link pagination-list__link--back">Назад</a>
+            </li>
             <li class="pagination-list__item">
               <a href="#" class="pagination-list__link">1</a>
             </li>
@@ -248,8 +249,11 @@
             <li class="pagination-list__item">
               <a href="#" class="pagination-list__link">15</a>
             </li>
+            <li class="pagination-list__item">
+              <a href="#" class="pagination-list__link pagination-list__link--next">Вперед</a>
+            </li>
           </ul>
-          <a href="#" class="paginations__link paginations__link--next">Вперед</a>
+          
         </div>
       </section>
     </div>
@@ -283,17 +287,17 @@
         <ul class="social-list">
           <li class="social-list__item">
             <a href="#" class="social-list__link social-list__link--facebook">
-              <img class="social-list__img" src="img/social-contacts/icon-fb.svg" width="9" height="18" alt="Ссылка на социальную сеть Фейсбук">
+              <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li class="social-list__item">
             <a href="#" class="social-list__link social-list__link--instagram">
-              <img class="social-list__img" src="img/social-contacts/icon-inst.svg" width="16" height="16"  alt="Ссылка на социальную сеть Инстаграм">
+              <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
           <li class="social-list__item">
             <a href="#" class="social-list__link social-list__link--twitter">
-              <img class="social-list__img" src="img/social-contacts/icon-twit.svg" width="15" height="15" alt="Ссылка на социальную сеть Твиттер">
+              <span class="visually-hidden">Твиттер</span>
             </a>
           </li>
         </ul>
