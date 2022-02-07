@@ -11,13 +11,13 @@
     <header class="header">
       <div class="container">
           <a href="#" class="logo">
-            <img src="" class="logo__img" alt="Логотип магазина Device">
+            <img class="logo__img" src="/img/logo.svg"  height="36" width="145" alt="Логотип магазина Device">
           </a>
 
           <div class="header-interface">
             <form action="https://echo.htmlacademy.ru" class="header-form">
               <input type="text" class="header-form__input" placeholder="Текст поиска">
-              <button class="header-form__button">Найти</button>
+              <button class="header-form__button" type="button">Найти</button>
             </form>
             <ul class="header-interface__list">
               <li class="header-interface__item">
@@ -80,11 +80,16 @@
       <section class="slider">
         <div class="container">
             <ul class="slider-list">
+              <div class="slider__control">
+                <button class="slider__control-button" type="button"><span></span></button>
+                <button class="slider__control-button" type="button"><span></span></button>
+                <button class="slider__control-button" type="button"><span class="current"></span></button>
+              </div>
               <li class="slider-item">
                 <div class="slider-column">
-                  <img class="slider-column__img" src="" alt="Квадракоптер">
-                  <button class="slider__button slider__button--next">Next</button>
-                  <button class="slider__button slider__button--prev">Prev</button>
+                  <img class="slider-column__img" src="img/slider/quadrocopter-slide-1.png" height="560" width="560"  alt="Квадракоптер">
+                  <button class="slider__button slider__button--next" type="button">Next</button>
+                  <button class="slider__button slider__button--prev" type="button">Prev</button>
                 </div>
                 <div class="slider-column">
                   <p class="slider-column__subtitle">Порхает как бабочка, жалит как пчела!</p>
@@ -108,9 +113,9 @@
 
               <li class="slider-item">
                 <div class="slider-column">
-                  <img class="slider-column__img" src="" alt="Фитнес-браслет">
-                  <button class="slider__button slider__button--next">Next</button>
-                  <button class="slider__button slider__button--prev">Prev</button>
+                  <img class="slider-column__img" src="img/slider/bracelet-slide-2.png" height="560" width="560" alt="Фитнес-браслет">
+                  <button class="slider__button slider__button--next" type="button">Next</button>
+                  <button class="slider__button slider__button--prev" type="button">Prev</button>
                 </div>
                 <div class="slider-column">
                   <p class="slider-subtitle">Худеем правильном!</p>
@@ -130,9 +135,9 @@
 
               <li class="slider-item">
                 <div class="slider-column">
-                  <img class="slider-column__img" src="" alt="Сельфи палка">
-                  <button class="slider__button slider__button--next">Next</button>
-                  <button class="slider__button slider__button--prev">Prev</button>
+                  <img class="slider-column__img" src="img/slider/monopod-slide-3.png" height="560" width="560" alt="Сельфи палка">
+                  <button class="slider__button slider__button--next" type="button">Next</button>
+                  <button class="slider__button slider__button--prev" type="button">Prev</button>
                 </div>
                 <div class="slider-column">
                   <p class="slider-subtitle">Делай селфи,как Бен Стиллер!</p>
@@ -170,37 +175,37 @@
           <ul class="product__list">
             <li class="product__item">
               <div class="product__wrapper">
-                <img class="product-wrapper__img" src="" alt="Очки виртуальной реальности">
+                <img class="product-wrapper__img" src="img/products/product-1.png" width="97" height="55" alt="Очки виртуальной реальности">
               </div>
               <h3 class="product__title">Виртуальная реальность</h3>
             </li>
             <li class="product__item">
               <div class="product__wrapper">
-                <img src="" class="product-wrapper__img"  alt="Девайсы для селфи фото и видео">
+                <img class="product-wrapper__img" src="img/products/product-2.png" width="87" height="117" alt="Девайсы для селфи фото и видео">
               </div>
               <h3 class="product__title">Моноподы для селфи</h3>
             </li>
             <li class="product__item">
               <div class="product__wrapper">
-                <img src="" class="product-wrapper__img"  alt="Девайсы для экстримальных фото и видео">
+                <img class="product-wrapper__img" src="img/products/product-3.png" width="72" height="87" alt="Девайсы для экстримальных фото и видео">
               </div>
               <h3  class="product__title">Экшн-камеры</h3>
             </li>
             <li class="product__item">
               <div class="product__wrapper">
-                <img src="" class="product-wrapper__img"  alt="Гаджеты для занятия фитнесом">
+                <img class="product-wrapper__img" src="img/products/product-4.png" width="108" height="66" alt="Гаджеты для занятия фитнесом">
               </div>
               <h3  class="product__title">Фитнес-браслеты</h3>
             </li>
             <li class="product__item">
               <div class="product__wrapper">
-                <img src="" class="product-wrapper__img"  alt="Умные девайсы">
+                <img class="product-wrapper__img" src="img/products/product-5.png" width="57" height="98" alt="Умные девайсы">
               </div>
               <h3  class="product__title">Умные часы</h3>
             </li>
             <li class="product__item">
               <div class="product__wrapper">
-                <img  src="" class="product-wrapper__img" alt="Квадракоптеры для фото и видео сьемки">
+                <img class="product-wrapper__img" src="img/products/product-6.png" width="133" height="70" alt="Квадракоптеры для фото и видео сьемки">
               </div>
               <h3  class="product__title">Квадрокоптеры</h3>
             </li>
@@ -214,7 +219,7 @@
           <ul class="services-list">
             <li class="services-item">
               <div class="services-column">
-                <button class="services-column__button button">Доставка</button>
+                <button class="services-column__button button" type="button">Доставка</button>
               </div>
 
               <div class="secvices-info">
@@ -224,12 +229,13 @@
                   вашему подъезду совершенно бесплатно! 
                   Ведь мы неплохо заработаем, поднимая его на ваш этаж.
                 </p>
+                <img class="secvices-info__img" src="img/services/services-delivery-img.png" width="136" height="165" alt="Доставка продукции">
               </div>
             </li>
 
             <li class="services-item">
               <div class="services-column">
-                <button class="services-column__button button">Гарантия</button>
+                <button class="services-column__button button" type="button">Гарантия</button>
               </div>
               
               <div class="secvices-info">
@@ -239,12 +245,13 @@
                   сгорит дом — не переживайте, мы выдадим вам новый.
                   Товар, не дом, конечно же.
                 </p>
+                <img class="secvices-info__img" src="img/services/services-guarantee-img.png" width="171" height="195" alt="Гарантия качества">
               </div>
             </li>
 
             <li class="services-item">
               <div class="services-column">
-                <button class="services-column__button button">Кредит</button>
+                <button class="services-column__button button" type="button">Кредит</button>
               </div>
               
               <div class="secvices-info">
@@ -254,6 +261,7 @@
                   наиболее выгодные условия кредита. 
                   Выгодные для банка, разумеется.
                 </p>
+                <img class="secvices-info__img" src="img/services/services-credit-img.png" width="156" height="189" alt="Доступен кредит">
               </div>
             </li>
           </ul>
@@ -326,7 +334,7 @@
     <footer class="footer">
       <div class="container">
           <a href="#" class="footer-logo">
-            <img src="" class="footer-logo__img"  alt="Магазин девайсов">
+            <img class="footer-logo__img" src="img/logo-footer.svg" width="145" height="36" alt="Магазин девайсов">
           </a>
         <div class="footer-info">
           <p class="footer-info__text">
@@ -351,23 +359,23 @@
           <ul class="social-list">
             <li class="social-list__item">
               <a href="#" class="social-list__link social-list__link--facebook">
-                <img class="social-list__img" src="" alt="">
+                <img class="social-list__img" src="img/social-contacts/icon-fb.svg" width="9" height="18" alt="Ссылка на социальную сеть Фейсбук">
               </a>
             </li>
             <li class="social-list__item">
               <a href="#" class="social-list__link social-list__link--instagram">
-                <img src=""  class="social-list__img" alt="">
+                <img class="social-list__img" src="img/social-contacts/icon-inst.svg" width="16" height="16"  alt="Ссылка на социальную сеть Инстаграм">
               </a>
             </li>
             <li class="social-list__item">
               <a href="#" class="social-list__link social-list__link--twitter">
-                <img src="" class="social-list__img"  alt="">
+                <img class="social-list__img" src="img/social-contacts/icon-twit.svg" width="15" height="15" alt="Ссылка на социальную сеть Твиттер">
               </a>
             </li>
           </ul>
 
           <a href="https://htmlacademy.ru/" class="footer-social__academy">
-            <img src="" class="footer-social__academy-img" alt="HTML academy курсы для всех">
+            <img class="footer-social__academy-img" src="img/social-contacts/logo-htmlacademy.svg" width="115" height="33" alt="HTML academy курсы для всех">
           </a>
         </div>
       </div>

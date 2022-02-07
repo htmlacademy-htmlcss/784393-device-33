@@ -10,21 +10,21 @@
 <body>
   <header class="header">
     <div class="container">
-        <a href="#" class="logo">
-          <img src="" class="logo__img" alt="Логотип магазина Device">
-        </a>
+      <a href="#" class="logo">
+        <img class="logo__img" src="img/logo.svg"  height="36" width="145" alt="Логотип магазина Device">
+      </a>
 
         <div class="header-interface">
           <form action="https://echo.htmlacademy.ru" class="header-form">
             <input type="text" class="header-form__input" placeholder="Текст поиска">
-            <button class="header-form__button">Найти</button>
+            <button class="header-form__button" type="button">Найти</button>
           </form>
           <ul class="header-interface__list">
             <li class="header-interface__item">
               <a href="#" class="header-interface__link header-interface__link--user">Коля Петухов</a>
             </li>
             <li class="header-interface__item">
-              <a href="#" class="header-interface__link header-interface__link--entrance">Войти</a>
+              <a href="#" class="header-interface__link header-interface__link--entrance">Выйти</a>
             </li>
             <li class="header-interface__item">
               <a href="#" class="header-interface__link header-interface__link--compare">Сравнить</a>
@@ -78,20 +78,17 @@
     </div>
   </header>
 
-
-
-
   <main class="main">
     <h1 class="catalog-main-title">Моноподы для селфи</h1>
-    <ul class="breadcrumps-list">
-      <li class="breadcrumps-list__item">
-        <a href="#" class="breadcrumps-list__link">Главная</a>
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item">
+        <a href="#" class="breadcrumbs__link">Главная</a>
       </li>
-      <li class="breadcrumps-list__item">
-        <a href="#" class="breadcrumps-list__link">Каталог товаров</a>
+      <li class="breadcrumps__item">
+        <a href="#" class="breadcrumbs__link">Каталог товаров</a>
       </li>
-      <li class="breadcrumps-list__item">
-        <a href="#" class="breadcrumps-list__link">Моноподы для селфи</a>
+      <li class="breadcrumps__item">
+        <a href="#" class="breadcrumbs__link">Моноподы для селфи</a>
       </li>
     </ul>
 
@@ -105,20 +102,17 @@
                 <div class="range-control">
                   <input type="range" min="0" max="5000" step="10" value="100">
                 </div>
-                <!-- /.range-control -->
 
                 <div class="price-control">
                   <label class="min-price">
                     от 0
                     <input type="text" name="min-price" value="0">
                   </label>
-                  <!-- /.min-price -->
 
                   <label class="max-price">
                     до 5000
                     <input type="text" name="max-price" value="5000">
                   </label>
-                  <!-- /.max-price -->
                 </div>
               </div>
           </fieldset>
@@ -130,35 +124,28 @@
                 <input class="filter-color__checkbox" id="filter-black" type="checkbox">
                 <label class="filter-color__label" for="filter-black">Черный</label>
               </li>
-              <!-- /.filter-color__item -->
 
               <li class="filter-color__item">
                 <input class="filter-color__checkbox" id="filter-white" type="checkbox">
                 <label class="filter-color__label" for="filter-white">Белый</label>
               </li>
-              <!-- /.filter-color__item -->
 
               <li class="filter-color__item">
                 <input class="filter-color__checkbox" id="filter-blue" type="checkbox">
                 <label class="filter-color__label" for="filter-blue">Синий</label>
               </li>
-              <!-- /.filter-color__item -->
 
               <li class="filter-color__item">
                 <input class="filter-color__checkbox" id="filter-red" type="checkbox">
                 <label class="filter-color__label" for="filter-red">Красный</label>
               </li>
-              <!-- /.filter-color__item -->
 
               <li class="filter-color__item">
                 <input class="filter-color__checkbox" id="filter-pink" type="checkbox">
                 <label class="filter-color__label" for="filter-pink">Розовый</label>
               </li>
-              <!-- /.filter-color__item -->
             </ul>
-            <!-- /.filter-color__list -->
           </fieldset>
-          <!-- /.filter-color -->
 
           <fieldset class="filter-bluetooth">
             <legend class="filter-title">Bluetooth</legend>
@@ -167,22 +154,15 @@
                 <input class="filter-bluetooth__radio" id="filter-bluetooth-available" name="group-setting" type="radio">
                 <label for="filter-bluetooth-available" class="filter-bluetooth__label">Eсть</label>
               </li>
-              <!-- /.filter-bluetooth__item -->
               <li class="filter-bluetooth__item">
                 <input class="filter-bluetooth__radio" id="filter-bluetooth-missing" name="group-setting" type="radio">
                 <label for="filter-bluetooth-missing" class="filter-bluetooth__label">Нет</label>
               </li>
-              <!-- /.filter-bluetooth__item -->
             </ul>
-            <!-- /.filter-bluetooth__list -->
           </fieldset>
-          <!-- /.filter-bluetooth -->
-          <button class="filters-form__button button">Показать</button>
+          <button class="filters-form__button button" type="button">Показать</button>
         </form>
-        <!-- /.filters-form -->
-
       </section>
-      <!-- /.filters -->
 
       <section class="products">
         <div class="products-sorting__wrapper">
@@ -209,71 +189,66 @@
         <ul class="products-list">
           <li class="products-list__item">
             <div class="products-list__wrapper-img">
-              <img class="products-list__item-img" src="" alt="">
+              <img class="products-list__item-img" src="img/catalog/product-1.png" width="360" height="380"  alt="Любителям делать хорошие селфи">
             </div>
             <div class="products-item__wrapper-text">
               <h3 class="products-item__subtitle">Любительская селфи-палка</h3>
-              <p class="products-item__sale">500 р</p>
+              <p class="products-item__cost">500 р</p>
             </div>
           </li>
 
           <li class="products-list__item">
             <div class="products-list__wrapper-img">
-              <img class="products-list__item-img" src="" alt="">
+              <img class="products-list__item-img" src="img/catalog/product-2.png" width="360" height="380" alt="Любителям делать профессиональные селфи">
             </div>
             <div class="products-item__wrapper-text">
               <h3 class="products-item__subtitle">Профессиональная селфи-палка </h3>
-              <p class="products-item__sale">1500 р</p>
+              <p class="products-item__cost">1500 р</p>
             </div>
           </li>
 
           <li class="products-list__item">
             <div class="products-list__wrapper-img">
-              <img class="products-list__item-img" src="" alt="">
+              <img class="products-list__item-img" src="img/catalog/product-3.png" width="360" height="380" alt="Непотопляемая селфи-палка">
             </div>
             <div class="products-item__wrapper-text">
               <h3 class="products-item__subtitle">Непотопляемая селфи-палка</h3>
-              <p class="products-item__sale">2500 р</p>
+              <p class="products-item__cost">2500 р</p>
             </div>
           </li>
 
           <li class="products-list__item">
             <div class="products-list__wrapper-img">
-              <img class="products-list__item-img" src="" alt="">
+              <img class="products-list__item-img" src="img/catalog/product-4.png" width="360" height="380" alt="Селфи-палка ввиде руки">
             </div>
             <div class="products-item__wrapper-text">
               <h3 class="products-item__subtitle">Селфи-палка «Следуй за мной»</h3>
-              <p class="products-item__sale">1 500 р</p>
+              <p class="products-item__cost">1 500 р</p>
             </div>
           </li>
         </ul>
 
-        <a href="#" class="products-more">Загрузить еще</a>
-        <div class="products-breadcrumbs">
-          <a href="" class="products-breadcrumbs__link products-breadcrumbs__link--back">Назад</a>
-          <ul class="products-breadcrumbs__list">
-            <li class="products-breadcrumbs__item">
-              <a href="#" class="products-breadcrumbs__link">1</a>
+        <button class="products-more" type="button">Загрузить еще</button>
+        <div class="paginations">
+          <a href="#" class="paginations__link paginations__link--back">Назад</a>
+          <ul class="pagination-list">
+            <li class="pagination-list__item">
+              <a href="#" class="pagination-list__link">1</a>
             </li>
-            <!-- /.products-breadcrumbs__item -->
-            <li class="products-breadcrumbs__item">
-              <a href="#" class="products-breadcrumbs__link">2</a>
+            <li class="pagination-list__item">
+              <a href="#" class="pagination-list__link">2</a>
             </li>
-            <!-- /.products-breadcrumbs__item -->
-            <li class="products-breadcrumbs__item">
-              <a href="#" class="products-breadcrumbs__link">3</a>
+            <li class="pagination-list__item">
+              <a href="#" class="pagination-list__link">3</a>
             </li>
-            <!-- /.products-breadcrumbs__item -->
-            <li class="products-breadcrumbs__item">
-              <a href="#" class="products-breadcrumbs__link">...</a>
+            <li class="pagination-list__item">
+              <a href="#" class="pagination-list__link">...</a>
             </li>
-            <!-- /.products-breadcrumbs__item -->
-            <li class="products-breadcrumbs__item">
-              <a href="#" class="products-breadcrumbs__link">15</a>
+            <li class="pagination-list__item">
+              <a href="#" class="pagination-list__link">15</a>
             </li>
-            <!-- /.products-breadcrumbs__item -->
           </ul>
-          <a href="" class="products-breadcrumbs__link products-breadcrumbs__link--next">Вперед</a>
+          <a href="#" class="paginations__link paginations__link--next">Вперед</a>
         </div>
       </section>
     </div>
@@ -282,7 +257,7 @@
   <footer class="footer">
     <div class="container">
         <a href="#" class="footer-logo">
-          <img class="footer-logo__img" src="" alt="Магазин девайсов">
+          <img class="footer-logo__img" src="img/logo-footer.svg" width="145" height="36" alt="Магазин девайсов">
         </a>
       <div class="footer-info">
         <p class="footer-info__text">
@@ -307,23 +282,23 @@
         <ul class="social-list">
           <li class="social-list__item">
             <a href="#" class="social-list__link social-list__link--facebook">
-              <img class="social-list__img" src="" alt="">
+              <img class="social-list__img" src="img/social-contacts/icon-fb.svg" width="9" height="18" alt="Ссылка на социальную сеть Фейсбук">
             </a>
           </li>
           <li class="social-list__item">
             <a href="#" class="social-list__link social-list__link--instagram">
-              <img class="social-list__img" src="" alt="">
+              <img class="social-list__img" src="img/social-contacts/icon-inst.svg" width="16" height="16"  alt="Ссылка на социальную сеть Инстаграм">
             </a>
           </li>
           <li class="social-list__item">
             <a href="#" class="social-list__link social-list__link--twitter">
-              <img class="social-list__img" src="" alt="">
+              <img class="social-list__img" src="img/social-contacts/icon-twit.svg" width="15" height="15" alt="Ссылка на социальную сеть Твиттер">
             </a>
           </li>
         </ul>
 
         <a href="https://htmlacademy.ru/" class="footer-social__academy">
-          <img class="footer-social__academy-img" src="" alt="HTML academy курсы для всех">
+          <img class="footer-social__academy-img" src="img/social-contacts/logo-htmlacademy.svg" width="115" height="33" alt="HTML academy курсы для всех">
         </a>
       </div>
     </div>
