@@ -11,13 +11,13 @@
     <header class="header">
       <div class="container">
           <a href="#" class="logo">
-            <img src="" class="logo__img" alt="Логотип магазина Device">
+            <img class="logo__img" src="/img/logo.svg"  height="36" width="145" alt="Логотип магазина Device">
           </a>
 
           <div class="header-interface">
             <form action="https://echo.htmlacademy.ru" class="header-form">
               <input type="text" class="header-form__input" placeholder="Текст поиска">
-              <button class="header-form__button">Найти</button>
+              <button class="header-form__button" type="button">Найти</button>
             </form>
             <ul class="header-interface__list">
               <li class="header-interface__item">
@@ -80,11 +80,16 @@
       <section class="slider">
         <div class="container">
             <ul class="slider-list">
+              <div class="slider__control">
+                <button class="slider__control-button" type="button"><span></span></button>
+                <button class="slider__control-button" type="button"><span></span></button>
+                <button class="slider__control-button" type="button"><span class="current"></span></button>
+              </div>
               <li class="slider-item">
                 <div class="slider-column">
-                  <img class="slider-column__img" src="" alt="Квадракоптер">
-                  <button class="slider__button slider__button--next">Next</button>
-                  <button class="slider__button slider__button--prev">Prev</button>
+                  <img class="slider-column__img" src="img/slider/quadrocopter-slide-1.png" height="560" width="560"  alt="Квадракоптер">
+                  <button class="slider__button slider__button--next" type="button">Next</button>
+                  <button class="slider__button slider__button--prev" type="button">Prev</button>
                 </div>
                 <div class="slider-column">
                   <p class="slider-column__subtitle">Порхает как бабочка, жалит как пчела!</p>
@@ -108,9 +113,9 @@
 
               <li class="slider-item">
                 <div class="slider-column">
-                  <img class="slider-column__img" src="" alt="Фитнес-браслет">
-                  <button class="slider__button slider__button--next">Next</button>
-                  <button class="slider__button slider__button--prev">Prev</button>
+                  <img class="slider-column__img" src="img/slider/bracelet-slide-2.png" height="560" width="560" alt="Фитнес-браслет">
+                  <button class="slider__button slider__button--next" type="button">Next</button>
+                  <button class="slider__button slider__button--prev" type="button">Prev</button>
                 </div>
                 <div class="slider-column">
                   <p class="slider-subtitle">Худеем правильном!</p>
@@ -130,9 +135,9 @@
 
               <li class="slider-item">
                 <div class="slider-column">
-                  <img class="slider-column__img" src="" alt="Сельфи палка">
-                  <button class="slider__button slider__button--next">Next</button>
-                  <button class="slider__button slider__button--prev">Prev</button>
+                  <img class="slider-column__img" src="img/slider/monopod-slide-3.png" height="560" width="560" alt="Сельфи палка">
+                  <button class="slider__button slider__button--next" type="button">Next</button>
+                  <button class="slider__button slider__button--prev" type="button">Prev</button>
                 </div>
                 <div class="slider-column">
                   <p class="slider-subtitle">Делай селфи,как Бен Стиллер!</p>
@@ -168,41 +173,23 @@
         <h2 class="visually-hidden">Продукты</h2>
         <div class="container">
           <ul class="product__list">
-            <li class="product__item">
-              <div class="product__wrapper">
-                <img class="product-wrapper__img" src="" alt="Очки виртуальной реальности">
-              </div>
-              <h3 class="product__title">Виртуальная реальность</h3>
+            <li class="product__item  product__item--virtual-reality">
+              <a href="#" class="product__subtitle">Виртуальная реальность</a>
             </li>
-            <li class="product__item">
-              <div class="product__wrapper">
-                <img src="" class="product-wrapper__img"  alt="Девайсы для селфи фото и видео">
-              </div>
-              <h3 class="product__title">Моноподы для селфи</h3>
+            <li class="product__item  product__item--monopods">
+              <a href="#" class="product__subtitle">Моноподы для селфи</a>
             </li>
-            <li class="product__item">
-              <div class="product__wrapper">
-                <img src="" class="product-wrapper__img"  alt="Девайсы для экстримальных фото и видео">
-              </div>
-              <h3  class="product__title">Экшн-камеры</h3>
+            <li class="product__item product__item--cameras">
+              <a href="#" class="product__subtitle">Экшн-камеры</a>
             </li>
-            <li class="product__item">
-              <div class="product__wrapper">
-                <img src="" class="product-wrapper__img"  alt="Гаджеты для занятия фитнесом">
-              </div>
-              <h3  class="product__title">Фитнес-браслеты</h3>
+            <li class="product__item product__item--bracelets">
+              <a href="#" class="product__subtitle">Фитнес-браслеты</a>
             </li>
-            <li class="product__item">
-              <div class="product__wrapper">
-                <img src="" class="product-wrapper__img"  alt="Умные девайсы">
-              </div>
-              <h3  class="product__title">Умные часы</h3>
+            <li class="product__item product__item--watch">
+              <a href="#" class="product__subtitle">Умные часы</a>
             </li>
-            <li class="product__item">
-              <div class="product__wrapper">
-                <img  src="" class="product-wrapper__img" alt="Квадракоптеры для фото и видео сьемки">
-              </div>
-              <h3  class="product__title">Квадрокоптеры</h3>
+            <li class="product__item product__item--quadcopters">
+              <a href="#" class="product__subtitle">Квадрокоптеры</a>
             </li>
           </ul>
         </div>
@@ -214,7 +201,7 @@
           <ul class="services-list">
             <li class="services-item">
               <div class="services-column">
-                <button class="services-column__button button">Доставка</button>
+                <button class="services-column__button button" type="button">Доставка</button>
               </div>
 
               <div class="secvices-info">
@@ -229,7 +216,7 @@
 
             <li class="services-item">
               <div class="services-column">
-                <button class="services-column__button button">Гарантия</button>
+                <button class="services-column__button button" type="button">Гарантия</button>
               </div>
               
               <div class="secvices-info">
@@ -244,7 +231,7 @@
 
             <li class="services-item">
               <div class="services-column">
-                <button class="services-column__button button">Кредит</button>
+                <button class="services-column__button button" type="button">Кредит</button>
               </div>
               
               <div class="secvices-info">
@@ -326,7 +313,7 @@
     <footer class="footer">
       <div class="container">
           <a href="#" class="footer-logo">
-            <img src="" class="footer-logo__img"  alt="Магазин девайсов">
+            <img class="footer-logo__img" src="img/logo-footer.svg" width="145" height="36" alt="Магазин девайсов">
           </a>
         <div class="footer-info">
           <p class="footer-info__text">
@@ -351,23 +338,23 @@
           <ul class="social-list">
             <li class="social-list__item">
               <a href="#" class="social-list__link social-list__link--facebook">
-                <img class="social-list__img" src="" alt="">
+                <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
             <li class="social-list__item">
               <a href="#" class="social-list__link social-list__link--instagram">
-                <img src=""  class="social-list__img" alt="">
+                <span class="visually-hidden">Инстаграм</span>
               </a>
             </li>
             <li class="social-list__item">
               <a href="#" class="social-list__link social-list__link--twitter">
-                <img src="" class="social-list__img"  alt="">
+                <span class="visually-hidden">Твиттер</span>
               </a>
             </li>
           </ul>
 
           <a href="https://htmlacademy.ru/" class="footer-social__academy">
-            <img src="" class="footer-social__academy-img" alt="HTML academy курсы для всех">
+            <img class="footer-social__academy-img" src="img/social-contacts/logo-htmlacademy.svg" width="115" height="33" alt="HTML academy курсы для всех">
           </a>
         </div>
       </div>
