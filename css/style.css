@@ -542,7 +542,7 @@ body {
   position: absolute;
   display: block;
   content: '';
-  background-image: url('/img/social-contacts/icon-fb.svg');
+  background-image: url('../img/social-contacts/icon-fb.svg');
   background-position: center;
   background-repeat: no-repeat;
   width: 9px;
@@ -553,7 +553,7 @@ body {
   position: absolute;
   display: block;
   content: '';
-  background-image: url('/img/social-contacts/icon-inst.svg');
+  background-image: url('../img/social-contacts/icon-inst.svg');
   background-position: center;
   background-repeat: no-repeat;
   width: 16px;
@@ -564,7 +564,7 @@ body {
   position: absolute;
   display: block;
   content: '';
-  background-image: url('/img/social-contacts/icon-twit.svg');
+  background-image: url('../img/social-contacts/icon-twit.svg');
   background-position: center;
   background-repeat: no-repeat;
   width: 15px;
