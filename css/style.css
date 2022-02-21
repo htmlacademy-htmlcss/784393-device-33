@@ -110,7 +110,7 @@ body {
   height: 16px;
   top: 11px;
   left: 15px;
-  background: url("/img/icons/icon-search.svg") center no-repeat;
+  background: url("../img/icons/icon-search.svg") center no-repeat;
 }
 
 .header-form__input {
