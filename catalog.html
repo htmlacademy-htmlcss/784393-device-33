@@ -10,7 +10,7 @@
 <body>
   <header class="header">
     <div class="container header-container">
-        <a href="#" class="header__logo">
+        <a href="index.html" class="header__logo">
           <img class="logo__img" src="img/logo.svg"  height="36" width="145" alt="Логотип магазина Device">
         </a>
 
@@ -37,46 +37,51 @@
           </ul>
         </div>
 
-      <div class="header-services">
-        <div class="header-services__items">
-          <button class="header-services__button" type="button">Каталог товаров</button>
+        <div class="header-services">
+          <div class="header-services__items">
+            <button class="header-services__button" type="button">
+              <span class="header-services__button-decorate header-services__button--plus">Каталог товаров</span>
+              <span class="header-services__button--minus"></span>
+            </button>
+          </div>
+          <nav class="header-navigation">
+            <ul class="header-navigation__list">
+              <li class="header-navigation__item">
+                <a href="#" class="header-navigation__link">Доставка</a>
+              </li>
+              <li class="header-navigation__item">
+                <a href="#" class="header-navigation__link">Гарантия</a>
+              </li>
+              <li class="header-navigation__item">
+                <a href="#" class="header-navigation__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
           <ul class="header-services__menu">
             <li class="header-services__item">
               <a href="#" class="header-services__link">Виртуальная реалность</a>
             </li>
             <li class="header-services__item">
-              <a href="catalog.html" class="header-services__link">Моноподы для cелфи</a>
-            </li>
-            <li class="header-services__item">
-              <a href="#" class="header-services__link">Экшн-камеры</a>
-            </li>
-            <li class="header-services__item">
               <a href="#" class="header-services__link">Фитнес-браслеты</a>
+            </li>
+            <li class="header-services__item">
+              <a href="#" class="header-services__link">Квадрокоптеры</a>
+            </li>
+            <li class="header-services__item">
+              <a href="catalog.html" class="header-services__link">Моноподы для cелфи</a>
             </li>
             <li class="header-services__item">
               <a href="#" class="header-services__link">Умные часы</a>
             </li>
             <li class="header-services__item">
-              <a href="#" class="header-services__link">Квадрокоптеры</a>
+              <a href="#" class="header-services__link"><span class="header-services__link--empty">1</span></a>
+            </li>
+            <li class="header-services__item">
+              <a href="#" class="header-services__link">Экшн-камеры</a>
             </li>
           </ul>
         </div>
-
-        <nav class="header-navigation">
-          <ul class="header-navigation__list">
-            <li class="header-navigation__item">
-              <a href="#" class="header-navigation__link">Доставка</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="header-navigation__link">Гарантия</a>
-            </li>
-            <li class="header-navigation__item">
-              <a href="#" class="header-navigation__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
       </div>
-    </div>
   </header>
 
   <main class="main">
@@ -291,17 +296,17 @@
       <div class="footer-social">
         <ul class="social-list">
           <li class="social-list__item">
-            <a href="#" class="social-list__link social-list__link--facebook">
+            <a href="https://www.facebook.com/htmlacademy" class="social-list__link social-list__link--facebook">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li class="social-list__item">
-            <a href="#" class="social-list__link social-list__link--instagram">
+            <a href="https://www.instagram.com/htmlacademy/" class="social-list__link social-list__link--instagram">
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
           <li class="social-list__item">
-            <a href="#" class="social-list__link social-list__link--twitter">
+            <a href="https://twitter.com/htmlacademy_ru" class="social-list__link social-list__link--twitter">
               <span class="visually-hidden">Твиттер</span>
             </a>
           </li>
@@ -313,5 +318,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
