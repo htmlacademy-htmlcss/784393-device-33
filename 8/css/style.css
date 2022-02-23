@@ -315,15 +315,16 @@ body {
   width: 210px;
 }
 
+.header-services__item:last-child {
+  flex-shrink: 1;
+  width: 100%;
+}
+
 .header-services__link {
   font-size: 16px;
   line-height: 18px;
   text-decoration: none;
   color: #000000;
-}
-
-.header-services__link--empty {
-  display: none;
 }
 
 .header-navigation__list {
@@ -1273,6 +1274,7 @@ body {
 }
 
 .catalog-contaner {
+  padding-top: 25px;
   display: flex;
   justify-content: space-between;
 }
@@ -1283,6 +1285,7 @@ body {
 }
 
 .filters-title {
+  margin: 0;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 16px;
@@ -1291,10 +1294,35 @@ body {
   text-transform: uppercase;
 }
 
+.filter-title {
+  padding: 0;
+  padding-top: 12px;
+  position: relative;
+  width: 100%;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
+.filter-title::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  top: 0;
+  right: 0;
+  background-color: #000;
+}
+
+.filters-form {
+  padding-top: 60px;
+}
+
 .filter-item,
 .filter-color,
 .filter-bluetooth {
   margin: 0;
+  margin-bottom: 35px;
   padding: 0;
   border: none;
 }
@@ -1357,6 +1385,7 @@ body {
 .products-sorting__wrapper {
   padding-left: 60px;
   padding-right: 60px;
+  padding-bottom: 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1364,6 +1393,7 @@ body {
 }
 
 .products-sorting__text {
+  margin: 0;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 16px;
@@ -1372,23 +1402,40 @@ body {
   text-transform: uppercase;
 }
 
-.products-sorting__list {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  list-style: none;
-}
-
 .products-sorting__choice {
+  padding-right: 20px;
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
+  background-color: inherit;
+  border: none;
 }
 
-.products-sorting__link {
+.products-sortiong__buttons {
+  display: flex;
+}
+
+.products-sorting__button {
+  margin-right: 15px;
   display: block;
   opacity: 0.2;
+  cursor: pointer;
+}
+
+.products-sorting__button:last-child {
+  margin-right: 0;
+}
+
+.products-sorting__button-decorate--asc {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 12px solid black;
+}
+
+.products-sorting__button-decorate--desc {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 12px solid black;
 }
 
 /* products-list */
