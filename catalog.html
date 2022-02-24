@@ -10,13 +10,15 @@
 <body>
   <header class="header">
     <div class="container header-container">
-        <a href="#" class="header__logo">
+        <a href="index.html" class="header__logo">
           <img class="logo__img" src="img/logo.svg"  height="36" width="145" alt="Логотип магазина Device">
         </a>
 
         <div class="header-interface">
           <form action="https://echo.htmlacademy.ru" class="header-form">
-            <input type="text" class="header-form__input" placeholder="Текст поиска">
+            <label class="header-form__label">
+              <input type="text" class="header-form__input" placeholder="Текст поиска">
+            </label>
             <button class="header-form__button" type="button">Найти</button>
           </form>
           <ul class="header-interface__list">
@@ -35,46 +37,48 @@
           </ul>
         </div>
 
-      <div class="header-services">
-        <div class="header-services__items">
-          <button class="header-services__button" type="button">Каталог товаров</button>
+        <div class="header-services">
+          <div class="header-services__items">
+            <button class="header-services__button" type="button">
+              <span class="header-services__button-decorate header-services__button--plus">Каталог товаров</span>
+              <span class="header-services__button--minus"></span>
+            </button>
+          </div>
+          <nav class="header-navigation">
+            <ul class="header-navigation__list">
+              <li class="header-navigation__item">
+                <a href="#" class="header-navigation__link">Доставка</a>
+              </li>
+              <li class="header-navigation__item">
+                <a href="#" class="header-navigation__link">Гарантия</a>
+              </li>
+              <li class="header-navigation__item">
+                <a href="#" class="header-navigation__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
           <ul class="header-services__menu">
             <li class="header-services__item">
               <a href="#" class="header-services__link">Виртуальная реалность</a>
             </li>
             <li class="header-services__item">
-              <a href="catalog.html" class="header-services__link">Моноподы для cелфи</a>
-            </li>
-            <li class="header-services__item">
-              <a href="#" class="header-services__link">Экшн-камеры</a>
-            </li>
-            <li class="header-services__item">
               <a href="#" class="header-services__link">Фитнес-браслеты</a>
+            </li>
+            <li class="header-services__item">
+              <a href="#" class="header-services__link">Квадрокоптеры</a>
+            </li>
+            <li class="header-services__item">
+              <a href="catalog.html" class="header-services__link">Моноподы для cелфи</a>
             </li>
             <li class="header-services__item">
               <a href="#" class="header-services__link">Умные часы</a>
             </li>
             <li class="header-services__item">
-              <a href="#" class="header-services__link">Квадрокоптеры</a>
+              <a href="#" class="header-services__link">Экшн-камеры</a>
             </li>
           </ul>
         </div>
-
-        <nav class="header-navigation">
-          <ul class="header-navigation__list">
-            <li class="header-navigation__item">
-              <a href="#" class="header-navigation__link">Доставка</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="header-navigation__link">Гарантия</a>
-            </li>
-            <li class="header-navigation__item">
-              <a href="#" class="header-navigation__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
       </div>
-    </div>
   </header>
 
   <main class="main">
@@ -169,23 +173,17 @@
         <section class="products">
           <div class="products-sorting__wrapper">
             <p class="products-sorting__text">Сортировка:</p>
-            <ul class="products-sorting__list">
-              <li class="products-sorting__item">
-                <select class="products-sorting__choice" name="" id="">
-                  <option value="">Популярные</option>
-                </select>
-              </li>
-              <li class="products-sorting__item">
-                <a href="" class="products-sorting__link products-sorting__link-decorate--up">
-                  <span class="visually-hidden">Больше</span>
+              <select class="products-sorting__choice" name="" id="">
+                <option value="">Популярные</option>
+              </select>
+              <div class="products-sortiong__buttons">
+                <a class="products-sorting__button products-sorting__button-decorate--desc" type="button">
+                  <span class="visually-hidden">desc</span>
                 </a>
-              </li>
-              <li class="products-sorting__item">
-                <a href="" class="products-sorting__link products-sorting__link-decorate--down">
-                  <span class="visually-hidden">Меньше</span>
+                <a class="products-sorting__button products-sorting__button-decorate--asc" type="button">
+                  <span class="visually-hidden">asc</span>
                 </a>
-              </li>
-            </ul>
+              </div>
           </div>
   
           <ul class="products-list">
@@ -287,19 +285,19 @@
       </div>
 
       <div class="footer-social">
-        <ul class="social-list">
-          <li class="social-list__item">
-            <a href="#" class="social-list__link social-list__link--facebook">
+        <ul class="footer-social__list">
+          <li class="footer-social__item">
+            <a href="https://www.facebook.com/htmlacademy" class="footer-social__link footer-social__link--facebook">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
-          <li class="social-list__item">
-            <a href="#" class="social-list__link social-list__link--instagram">
+          <li class="footer-social__item">
+            <a href="https://www.instagram.com/htmlacademy/" class="footer-social__link footer-social__link--instagram">
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
-          <li class="social-list__item">
-            <a href="#" class="social-list__link social-list__link--twitter">
+          <li class="footer-social__item">
+            <a href="https://twitter.com/htmlacademy_ru" class="footer-social__link footer-social__link--twitter">
               <span class="visually-hidden">Твиттер</span>
             </a>
           </li>
@@ -311,5 +309,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
