@@ -231,9 +231,8 @@ body {
 .header-services {
   padding-top: 12px;
   padding-bottom: 33px;
-  grid-row: 3/3;
+  grid-row: 3 / -1;
   display: flex;
-  align-items: baseline;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -330,14 +329,18 @@ body {
   color: #000000;
 }
 
+.header-navigation {
+  width: 570px;
+}
+
 .header-navigation__list {
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   flex-wrap: wrap;
   list-style: none;
-  max-width: 570px;
 }
 
 .header-navigation__item {
@@ -1313,6 +1316,7 @@ body {
   border: 2px solid #000000;
   background-color: #ebebeb;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .toggle-min {
