@@ -431,18 +431,18 @@
             <textarea name="" id="modal-textarea" class="modal-form__descr" placeholder="В свободной форме"></textarea>
           </p>
           <div class="modal-form__count">
-            <label class="modal-form__info modal-form__count-quantity">Количество: 
-              <span class="modal-form__tooltip">
-                <button class="modal-form__tooltip-toggle" aria-labelledby="tooltip-label">
-                  <svg width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 0H1V2H3V0Z" fill="black"/>
-                    <path d="M3 4H1V12H3V4Z" fill="black"/>
-                  </svg>
-                </button>
-                <span class="modal-form__tooltip-text" role="tooltip">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям 
-                  к провозу багажа.</span>
-              </span>
-            </label>
+            <span class="modal-form__info">
+                <label class="modal-form__info modal-form__count-quantity">Количество:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" aria-labelledby="tooltip-label">
+                    <svg width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 0H1V2H3V0Z" fill="black"/>
+                      <path d="M3 4H1V12H3V4Z" fill="black"/>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
+                </span>
+            </span>
             <div class="modal-form__count-control">
               <button class="modal-form__count-button modal-count__button--less" type="button">
                 <span class="visually-hidden">Уменьшить на 1</span>
