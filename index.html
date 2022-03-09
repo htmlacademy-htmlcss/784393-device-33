@@ -31,6 +31,38 @@
               </li>
               <li class="header-interface__item">
                 <a href="#" class="header-interface__link header-interface__link--cart">Корзина</a>
+                
+                <div class="popover popover-cart">
+                  <div class="popover-content">
+                    <ul class="popover-content__list">
+                      <li class="popover-contenet__item">
+                        <a href="#" class="popover-content__link">
+                          <img src="/img/cart/cart-product-1.png" class="popover-content__img" height="43" width="39" alt="Любительская селфи-палка для красивых фотографий">
+                          <span class="popover-content__product">Любительская селфи-палка</span>
+                          <button class="popover-content__close-button" type="button">
+                            <span class="visually-hidden">Закрыть</span>
+                          </button>
+                        </a>
+                      </li>
+                      <li class="popover-contenet__item">
+                        <a href="#" class="popover-content__link">
+                          <img src="/img/cart/cart-product-2.png" class="popover-content__img" height="43" width="39" alt="Профессиональная селфи-палка для красивых фотографий">
+                          <span class="popover-content__product">Профессиональная селфи-палка</span>
+                          <button class="popover-content__close-button" type="button">
+                            <span class="visually-hidden">Закрыть</span>
+                          </button>
+                        </a>
+                        
+                      </li>
+                    </ul>
+                    <div class="popover-content__wrapper">
+                      <p class="popover-content__info">Товаров: 2</p>
+                      <p class="popover-content__info">Сумма: 2000Р</p>
+                    </div>
+                    <button class="popover-content__button" type="button">Открыть корзину</button>
+                  </div>
+                </div>
+
               </li>
             </ul>
           </div>
@@ -250,7 +282,7 @@
               <h3 class="service__descr-subtitle">Доставка</h3>
                 <p class="secvice-descr__text">
                   Мы с удовольствием доставим ваш товар прямо
-                   к вашему подъезду совершенно бесплатно!
+                   к&nbsp;вашему подъезду совершенно бесплатно!
                   Ведь мы неплохо заработаем, поднимая его на ваш этаж.
                 </p>
             </li>
@@ -419,20 +451,28 @@
         </button>
         <form action="#" class="modal-form">
           <p class="modal-form__content-wrapper">
-            <label for="modal-name" class="modal-form__info">Ваше имя:</label>
-            <input id="modal-name" type="text" class="modal-form__input" placeholder="Введите имя">
+            <label for="modal-name" class="modal-form__info modal-form__info--name">
+              <span class="modal-form__info-caption">Ваше имя:</span>
+              <input id="modal-name" type="text" class="modal-form__input" placeholder="Введите имя">
+            </label>
           </p>
           <p class="modal-form__content-wrapper">
-            <label for="modal-email" class="modal-form__info">Ваш e-mail</label>
-            <input id="modal-email" type="email" class="modal-form__input" placeholder="Почта">
+            <label for="modal-email" class="modal-form__info modal-form__info--email">
+              <span class="modal-form__info-caption">Ваш e-mail</span>
+              <input id="modal-email" type="email" class="modal-form__input" placeholder="Почта">
+            </label>
           </p>
           <p class="modal-form__descr-wrapper">
-            <label for="modal-textarea" class="modal-form__info">Что нужно привезти:</label>
-            <textarea name="" id="modal-textarea" class="modal-form__descr" placeholder="В свободной форме"></textarea>
+            <label for="modal-textarea" class="modal-form__info modal-form__nodecor">
+              <span class="modal-form__info-caption">Что нужно привезти:</span>
+              <textarea name="" id="modal-textarea" class="modal-form__descr" placeholder="В свободной форме"></textarea>
+            </label> 
           </p>
           <div class="modal-form__count">
-            <span class="modal-form__info">
-                <label class="modal-form__info modal-form__count-quantity">Количество:</label>
+            <span class="modal-form__info modal-form__nodecor">
+                <label class="modal-form__info modal-form__nodecor">
+                  <span class="modal-form__info-caption">Количество:</span>
+                </label>
                 <span class="tooltip">
                   <button class="tooltip-toggle" aria-labelledby="tooltip-label">
                     <svg width="4" height="12" viewBox="0 0 4 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -447,7 +487,7 @@
               <button class="modal-form__count-button modal-count__button--less" type="button">
                 <span class="visually-hidden">Уменьшить на 1</span>
               </button>
-              <p class="form-count__number">1</p>
+              <input class="form-count__number" type="number" placeholder="1">
               <button class="modal-form__count-button modal-count__button--more" type="button">
                 <span class="visually-hidden">Увеличить на 1</span>
               </button>
