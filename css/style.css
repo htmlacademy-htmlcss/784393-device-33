@@ -939,11 +939,11 @@ body {
   background-color: #ffe17f;
 }
 
-.service__list-button:active{
+.service__list-button:active {
   background-color: #ffcc33;
 }
 
-.service__list-button:active::before  {
+.service__list-button:active::before {
   background-color: #ffcc33;
 }
 
@@ -1346,9 +1346,9 @@ body {
 }
 
 .subscribe-form__input {
-  padding-top: 21px;
+  padding-top: 14px;
   padding-left: 20px;
-  padding-bottom: 16px;
+  padding-bottom: 9px;
   width: 557px;
   border-top: none;
   border-right: none;
@@ -1356,12 +1356,29 @@ body {
   border-bottom: 3px solid #c4c4c4;
   background-color: inherit;
   color: #444444;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .subscribe-form__input::placeholder {
   font-size: 18px;
   line-height: 30px;
   opacity: 0.5;
+}
+
+.subscribe-form__input:focus {
+  background-color: #dcdcdc;
+  outline: none;
+}
+
+.subscribe-form__input:invalid {
+  border-bottom-color: #ff3d3d;
+}
+
+.subscribe-form__input:disabled {
+  opacity: .3;
 }
 
 .subscribe-form__button {
