@@ -1396,6 +1396,19 @@ body {
   cursor: pointer;
 }
 
+.subscribe-form__button:hover {
+  opacity: .6;
+}
+
+.subscribe-form__button:active {
+  opacity: .3;
+}
+
+.subscribe-form__button:disabled {
+  opacity: .1;
+  cursor: default;
+}
+
 .subscribe-form__text {
   margin-left: auto;
   display: flex;
