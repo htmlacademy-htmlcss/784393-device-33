@@ -19,8 +19,11 @@
             <form action="https://echo.htmlacademy.ru" method="get" class="header-form">
               <div class="header-form__wrapper-input">
                 <input type="text" class="header-form__input" placeholder="Текст поиска">
+                <svg class="header-form__serch" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.7 14.6889L12.6 11.5889C13.5 10.3889 14 8.98892 14 7.38892C14 3.48892 10.9 0.388916 7 0.388916C3.1 0.388916 0 3.48892 0 7.38892C0 11.2889 3.1 14.3889 7 14.3889C8.6 14.3889 10 13.8889 11.2 12.9889L14.3 16.0889C14.5 16.2889 14.7 16.3889 15 16.3889C15.6 16.3889 16 15.9889 16 15.3889C16 15.1889 15.9 14.8889 15.7 14.6889ZM2 7.38892C2 4.58892 4.2 2.38892 7 2.38892C9.8 2.38892 12 4.58892 12 7.38892C12 10.1889 9.8 12.3889 7 12.3889C4.2 12.3889 2 10.1889 2 7.38892Z"/>
+                </svg>
               </div>
-              <button class="header-form__button" disable type="button">Найти</button>
+              <button class="header-form__button" type="button">Найти</button>
             </form>
             <ul class="header-interface__list">
               <li class="header-interface__item">
@@ -36,23 +39,26 @@
                   <div class="popover-content">
                     <ul class="popover-content__list">
                       <li class="popover-contenet__item">
-                        <a href="#" class="popover-content__link">
-                          <img src="/img/cart/cart-product-1.png" class="popover-content__img" height="43" width="39" alt="Любительская селфи-палка для красивых фотографий">
-                          <span class="popover-content__product">Любительская селфи-палка</span>
+                        <div class="popover-content__item-wrapper">
+                          <a href="#" class="popover-content__link">
+                            <img src="/img/cart/cart-product-1.png" class="popover-content__img" height="43" width="39" alt="Любительская селфи-палка для красивых фотографий">
+                            <span class="popover-content__product">Любительская селфи-палка</span>
+                          </a>
                           <button class="popover-content__close-button" type="button">
                             <span class="visually-hidden">Закрыть</span>
                           </button>
-                        </a>
+                        </div>
                       </li>
                       <li class="popover-contenet__item">
-                        <a href="#" class="popover-content__link">
-                          <img src="/img/cart/cart-product-2.png" class="popover-content__img" height="43" width="39" alt="Профессиональная селфи-палка для красивых фотографий">
-                          <span class="popover-content__product">Профессиональная селфи-палка</span>
+                        <div class="popover-content__item-wrapper">
+                          <a href="#" class="popover-content__link">
+                            <img src="/img/cart/cart-product-2.png" class="popover-content__img" height="43" width="39" alt="Профессиональная селфи-палка для красивых фотографий">
+                            <span class="popover-content__product">Профессиональная селфи-палка</span>
+                          </a>
                           <button class="popover-content__close-button" type="button">
                             <span class="visually-hidden">Закрыть</span>
                           </button>
-                        </a>
-                        
+                        </div>
                       </li>
                     </ul>
                     <div class="popover-content__wrapper">
@@ -62,7 +68,6 @@
                     <button class="popover-content__button" type="button">Открыть корзину</button>
                   </div>
                 </div>
-
               </li>
             </ul>
           </div>
@@ -198,12 +203,10 @@
                       <p class="slider-info__parameters-characteristic">8,5 м</p>
                       <p class="slider-info__parameters-desc">Длина палки</p>
                     </div>
-
                     <div class="slider-info__parameters">
                       <p class="slider-info__parameters-characteristic">5 кг</p>
                       <p class="slider-info__parameters-desc">Вес палки</p>
                     </div>
-
                     <div class="slider-info__parameters">
                       <p class="slider-info__parameters-characteristic">Карбон</p>
                       <p class="slider-info__parameters-desc">Материал</p>
@@ -260,23 +263,23 @@
           <ul class="service__list-info">
             <li class="service__info-item service__item-current">
               <div class="service__list-column">
-                <button class="service__list-button button-current button-more" type="button">Доставка</button>
+                <button class="service__list-button service__button-current service__button-more" type="button">Доставка</button>
+                <span class="service__button-decor"></span>
               </div>
             </li>
-
             <li class="service__info-item">
-              <div class="service-column">
-                <button class="service__list-button button-more" type="button">Гарантия</button>
+              <div class="service__list-column">
+                <button class="service__list-button service__button-more" type="button">Гарантия</button>
+                <span class="service__button-decor"></span>
               </div>
             </li>
-
             <li class="service__info-item">
-              <div class="services-column">
-                <button class="service__list-button button-more" type="button">Кредит</button>
+              <div class="service__list-column">
+                <button class="service__list-button service__button-more" type="button">Кредит</button>
+                <span class="service__button-decor"></span>
               </div>
             </li>
           </ul>
-
           <ul class="servise__list-descr">
             <li class="service__descr-item service__descr-item--delivery service-curent">
               <h3 class="service__descr-subtitle">Доставка</h3>
@@ -455,12 +458,14 @@
               <span class="modal-form__info-caption">Ваше имя:</span>
               <input id="modal-name" type="text" class="modal-form__input" placeholder="Введите имя">
             </label>
+            <span class="modal-form__input-message">Добавте имя</span>
           </p>
           <p class="modal-form__content-wrapper">
             <label for="modal-email" class="modal-form__info modal-form__info--email">
               <span class="modal-form__info-caption">Ваш e-mail</span>
               <input id="modal-email" type="email" class="modal-form__input" placeholder="Почта">
             </label>
+            <span class="modal-form__input-message">Забавный у вас адрес</span>
           </p>
           <p class="modal-form__descr-wrapper">
             <label for="modal-textarea" class="modal-form__info modal-form__nodecor">
