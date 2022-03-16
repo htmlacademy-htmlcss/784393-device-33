@@ -1,3 +1,4 @@
+/* Raleway */
 @font-face {
   font-family: "Raleway";
   font-style: normal;
@@ -616,6 +617,8 @@ body {
 .slider__button:focus {
   outline-color: #af4fff;
   outline-offset: 2px;
+  outline-width: 2px;
+  outline-style: solid;
 }
 
 .slider__button:disabled {
@@ -689,6 +692,9 @@ body {
 
 .slider__more:focus {
   outline-color: #af4fff;
+  outline-offset: 2px;
+  outline-width: 2px;
+  outline-style: solid;
 }
 
 .slider__more:disabled {
@@ -780,6 +786,9 @@ body {
 
 .slider__control-button:focus {
   outline-color: #af4fff;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
 }
 
 .current {
@@ -823,6 +832,8 @@ body {
 .categoty__subtitle:focus {
   outline-color: #af4fff;
   outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
 }
 
 .categoty__subtitle::before {
@@ -1131,6 +1142,8 @@ body {
 .delivery__link:focus {
   outline-color: #af4fff;
   outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
 }
 
 /* info */
@@ -1251,6 +1264,9 @@ body {
 
 .info__link:focus {
   outline-color: #af4fff;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
 }
 
 .info__link--about {
@@ -1287,6 +1303,8 @@ body {
 .info__phone:focus {
   outline-color: #af4fff;
   outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
 }
 
 .info__timetable {
@@ -1405,6 +1423,7 @@ body {
   text-transform: uppercase;
   border: 3px solid #cecece;
   cursor: pointer;
+  z-index: 1;
 }
 
 .subscribe-form__button:hover {
@@ -1418,6 +1437,13 @@ body {
 .subscribe-form__button:disabled {
   opacity: 0.1;
   cursor: default;
+}
+
+.subscribe-form__button:focus {
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: #af4fff;
 }
 
 .subscribe-form__text {
@@ -1756,6 +1782,8 @@ body {
 .breadcrumb__list-link:focus {
   outline-color: #af4fff;
   outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
 }
 
 /* wrapper-catalog */
@@ -1837,6 +1865,8 @@ body {
 .toggle:focus {
   outline-offset: 2px;
   outline-color: #af4fff;
+  outline-style: solid;
+  outline-width: 2px;
 }
 
 .price-control {
@@ -1859,13 +1889,16 @@ body {
 
 .price-control__value-input::-webkit-outer-spin-button,
 .price-control__value-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
 .price-control__value-input:focus {
   outline-color: #af4fff;
   outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
   opacity: 1;
 }
 
@@ -2165,7 +2198,8 @@ body {
   line-height: 30px;
   background-color: inherit;
   border: none;
-  appearance: none;
+  -webkit-appearance: none;
+       appearance: none;
   background-image: url(../img/icons/icon-select.svg);
   background-repeat: no-repeat;
   background-position: right -5px center;
@@ -2181,6 +2215,9 @@ body {
 
 .products-sorting__choice:focus {
   outline-color: #af4fff;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
 }
 
 .products-sortiong__buttons {
@@ -2218,6 +2255,9 @@ body {
 
 .products-sorting__button:focus {
   outline-color: #af4fff;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 2px;
 }
 
 .products-sorting__button:active .products-sorting__button-icon {
@@ -2270,6 +2310,8 @@ body {
 .products-list__item-link:focus {
   outline-offset: 2px;
   outline-color: #af4fff;
+  outline-style: solid;
+  outline-width: 2px;
 }
 
 .products-list__item-img {
@@ -2277,10 +2319,16 @@ body {
   display: inline-block;
 }
 
+.products-list__wrapper-info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .products-item__subtitle {
   margin-right: auto;
   padding-right: 10px;
-  flex-shrink: 1;
+  max-width: 235px;
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
@@ -2289,10 +2337,11 @@ body {
 
 .products-item__cost {
   margin-left: auto;
-  flex-shrink: 1;
   font-size: 18px;
   line-height: 21px;
   color: #444444;
+  width: 65px;
+  text-align: right;
 }
 
 .products-item__more {
@@ -2376,6 +2425,8 @@ body {
 .products__more:focus {
   outline-color: #af4fff;
   outline-offset: 2px;
+  outline-width: 2px;
+  outline-style: solid;
 }
 
 .products__more:disabled {
@@ -2437,6 +2488,9 @@ body {
 
 .pagination__list-link:focus {
   outline-color: #af4fff;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
   opacity: 1;
   color: rgba(0, 0, 0, 0.3);
 }
@@ -2768,7 +2822,8 @@ body {
 
 .form-count__number::-webkit-outer-spin-button,
 .form-count__number::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
