@@ -2200,9 +2200,10 @@ body {
   border: none;
   -webkit-appearance: none;
        appearance: none;
-  background-image: url(../img/icons/icon-select.svg);
+  background-image: url("../img/icons/icon-select.svg");
   background-repeat: no-repeat;
   background-position: right -5px center;
+  cursor: pointer;
 }
 
 .products-sorting__choice:hover {
